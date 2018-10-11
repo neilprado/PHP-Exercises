@@ -9,7 +9,7 @@
 <body>
   <?php
     include_once 'autoload.php';
-    $dvd = new Dvd('Teteia Unplugged', '1', 20.0, time());
+    $dvd = new Dvd('Ana ao Vivo', '1', 20.0, time());
     echo 'Nome:'.$dvd->getNome();
   ?>
 </body>

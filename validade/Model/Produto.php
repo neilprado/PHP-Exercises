@@ -1,6 +1,5 @@
 <?php
-  class Produto {
-    use Nomeavel, Logger;
+   class Produto {
     private $codigo;
     private $preco;
 
