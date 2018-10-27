@@ -42,9 +42,8 @@
           spl_autoload_register(
             function($classe){
               echo 'O interpretador 6 está a procura da classe '.$classe.'<br>';
-              $filename = "Classes/Traits/$classe.php";
+              $filename = "Tretas/$classe.php";
               if(file_exists($filename))
                 include_once $filename;
-              echo 'O interpretador não conseguiu achar a classe '.$classe.'<br>';
             });
 ?>

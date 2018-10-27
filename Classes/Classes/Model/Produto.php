@@ -1,11 +1,12 @@
 <?php
   abstract class Produto {
-    use Nomeavel;
     private $ator;
+    use Nomeavel;
 
     function __construct($nome, $ator){
       $this->nome = $nome;
       $this->ator = $ator;
+
     }
 
     function getAtor(){
