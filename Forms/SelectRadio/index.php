@@ -10,6 +10,7 @@
   <form action="selectr.php" method="get">
     <select name="genero">
       <?php
+        include_once 'selectr.php';
         $chaves = array_keys($filmes);
         foreach($chaves as $v){
       ?>
