@@ -7,14 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="add.php" method="post">
-        Nome: <input type="text" name="nome"><br>
-        Sexo: 
-        M <input type="radio" name="sexo" value="M">
-        F <input type="radio" name="sexo" value="F">
-        <br>
-        <input type="submit">
+    <form action="home.php" method="post">
+       Login: <input type="text" name="login"><br>
+       Senha: <input type="password" name="senha"><br>
+       <input type="submit">
     </form>
-    <a href="listar.php">Listar Convidados</a>
 </body>
 </html>
