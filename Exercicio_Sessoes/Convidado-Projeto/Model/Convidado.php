@@ -8,7 +8,7 @@
 
         function __construct($nome, $sexo)
         {
-            $thus->nome = $nome;
+            $this->nome = $nome;
             $this->sexo = $sexo;
         }
 

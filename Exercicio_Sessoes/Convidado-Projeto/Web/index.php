@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form>
+    <form action="add.php" method="post">
         Nome: <input type="text" name="nome"><br>
         Sexo: 
         M <input type="radio" name="sexo" value="M">
@@ -15,5 +15,6 @@
         <br>
         <input type="submit">
     </form>
+    <a href="listar.php">Listar Convidados</a>
 </body>
 </html>
