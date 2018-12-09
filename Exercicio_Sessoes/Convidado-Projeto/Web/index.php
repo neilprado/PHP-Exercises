@@ -7,7 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="home.php" method="post">
+    <?php
+    	if(isset($_SESSION['msg']))
+      	echo $_SESSION['msg'];
+    ?>
+    <form action="autenticar.php" method="post">
        Login: <input type="text" name="login"><br>
        Senha: <input type="password" name="senha"><br>
        <input type="submit">

@@ -3,7 +3,7 @@
         if($_POST['login'] == 'neil' && $_POST['senha'] == '123'){
             session_start();
             $_SESSION['logou'] = TRUE;
-            header("location:home.php?msg=Usuário $_POST['login'] logado com sucesso");
+            header("location:home.php?msg=Usuário logado com sucesso");
         }
         else
             header('location:index.php?msg=Falha na autenticação');
