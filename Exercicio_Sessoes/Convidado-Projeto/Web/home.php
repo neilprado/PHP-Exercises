@@ -14,8 +14,8 @@
         F <input type="radio" name="sexo" value="F">
         <br>
         <input type="submit" value="Adicionar">
-        <input type="submit" value="SAIR">
     </form>
     <a href="listar.php">Listar Convidados</a>
+    <a href="sair.php">Sair</a>
 </body>
 </html>

@@ -8,8 +8,8 @@
 </head>
 <body>
     <?php
-    	if(isset($_SESSION['msg']))
-      	echo $_SESSION['msg'];
+    	if(isset($_GET['msg']))
+      	echo $_GET['msg'];
     ?>
     <form action="autenticar.php" method="post">
        Login: <input type="text" name="login"><br>
