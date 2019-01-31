@@ -1,6 +1,9 @@
 @extends('basis')
 
 @section('content')
+    @if (isset($msg))
+      {{$msg}}
+    @endif
     <h2>Inserir novo aluno</h2>
     {!!Form::open(['action' => 'AlunoController@add', 'method' => 'POST']) !!}
       <div class="form-group">
