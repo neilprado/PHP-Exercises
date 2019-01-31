@@ -9,7 +9,7 @@ class AlunoController extends Controller
     public function index()
     {
         $alunos = \App\Aluno::all();
-        return view('index');
+        return view('index', ['alunos' => $alunos]);
     }
 
     public function add(Request $request)
@@ -25,6 +25,6 @@ class AlunoController extends Controller
         $telefone->numero = $request->input('numero');        
         $aluno->telefones()->save($telefone);
         $aluno->save();
-        return view('index',['msg'=>'Aluno cadastrado com sucesso']);
+        return redirect('/');
     }
 }

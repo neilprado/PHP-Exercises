@@ -4,6 +4,7 @@
     @if (isset($msg))
       {{$msg}}
     @endif
+    <h2>Número de alunos cadastrados: {{count($alunos)}}</h2>
     <h2>Inserir novo aluno</h2>
     {!!Form::open(['action' => 'AlunoController@add', 'method' => 'POST']) !!}
       <div class="form-group">
