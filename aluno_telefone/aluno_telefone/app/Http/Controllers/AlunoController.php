@@ -27,4 +27,16 @@ class AlunoController extends Controller
         $aluno->save();
         return redirect('/');
     }
+
+    public function list()
+    {
+        $alunos = \App\Aluno::orderBy('created_at', 'desc')->get();
+        return view('list')->with('alunos', $alunos);
+    }
+
+    public function show($id)
+    {
+        $aluno = \App\Aluno::find($id);
+        return view('show')->with('aluno', $aluno);
+    }
 }

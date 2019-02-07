@@ -16,5 +16,6 @@
         {{Form::text('numero', '', ['class' =>'form-control', 'placeholder' => 'Fone'])}}
       </div>
       {{Form::submit('Adicionar', ['class' => 'btn btn-primary'])}}
+      <a href="{{url('/listar')}}" class="btn btn-primary">Listar</a>
     {!!Form::close()!!}
 @endsection

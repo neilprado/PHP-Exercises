@@ -13,3 +13,6 @@
 
 Route::get('/', 'AlunoController@index');
 Route::post('/', 'AlunoController@add');
+Route::get('/listar', 'AlunoController@list');
+Route::get('/listar/{id}', 'AlunoController@show');
+
